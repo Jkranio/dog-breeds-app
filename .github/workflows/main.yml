@@ -21,6 +21,6 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Run the application (optional)
+      - name: Run the application
         run: |
           node index.js & echo "App Started" > app_output.txt

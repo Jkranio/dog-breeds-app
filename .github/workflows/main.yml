@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Run tests (replace with your test command if applicable)
-        run: npm test
+        run: sudo npm test
 
       - name: Run the application (optional)
         run: node index.js

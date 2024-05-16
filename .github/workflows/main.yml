@@ -23,3 +23,12 @@ jobs:
 
       - name: Run the application (optional)
         run: node index.js
+      - name: Check if application is running
+        run: |
+          if [ "${{ steps.run_application.outputs.app_status }}" == "success" ]; then
+            echo "Application is running successfully on port 3000."
+            exit 0
+          else
+            echo "Application failed to start."
+            exit 1
+          fi

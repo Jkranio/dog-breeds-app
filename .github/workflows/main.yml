@@ -19,7 +19,7 @@ jobs:
         run: npm install
 
       - name: Run tests (replace with your test command if applicable)
-        run: npm test  # Replace with your test command (e.g., jest)
+        run: npm jest
 
       - name: Run the application (optional)
         run: node index.js  # This will start your server
